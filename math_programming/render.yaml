@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: MP_Project
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn math_programming.wsgi:application
